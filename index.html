@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>***Leo***</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="todo_box">
+      <div class="top_box">
+          <h1>Учет сотрудников в компании Wepro</h1>
+          <h3 class="all">Общее число сотрудников</h3>
+          <h3 class="premiyu">Премию получат: 0</h3>
+      </div>
+      <div class="search">
+         <img src="./img/search.png">
+         <input type="text" placeholder="Поиск сотрудника" class="searchone">
+      </div>
+      <div class="main">
+         <div class="tabs">
+            <button class="btn All active_btn">Посмотреть всех</button>
+            <button class="btn up">Получит премию</button>
+            <button class="btn up2">На повышение</button>
+            <button class="btn thousand">З/П больше 1000$</button>
+        </div>
+        <div class="headtext">
+         <h3>Имя</h3>
+         <h3>ПО З/П</h3>
+         <h3>Получить премию?</h3>
+        </div>
+        <div class="new">
+        </div>
+      <form name="addsotrudnik">
+         <div class="buttons">
+            <input type="text" placeholder="Имя сотрудника" name="name">
+            <input type="text" placeholder="Фамилия сотрудника" name="surname">
+            <input type="text" placeholder="Заработная П" name="salary">
+            <input type="text" placeholder="Ссылка на фото" name="photo">
+            <button>Добавить сотрудника</button>
+         </div>
+      </form>
+      </div>
+  </div>
+
+  <div class="modal">
+     <div class="modalwindow">
+        <form name="edit">
+           <div class="cont">
+              <h2>Информация о пользователе</h2>
+              <img src="./img/alex.png" class="image">
+              <p class="edname">Имя: </p>
+              <p class="edprice">З/П: </p>
+              <p class="edprem">Премия: <input type="checkbox"></p>
+              <div class="btn2">
+                 <button>Изменить</button>
+                 <button>Сохранить</button>
+              </div>
+           </div>
+        </form>
+     </div>
+     <div class="overlay"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
